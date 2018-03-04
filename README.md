@@ -13,7 +13,7 @@ Repository of personal function developed in matlab
   clear
   clc
 
-  x=0.1*sin(2*pi*2*[0:0.01:20])+0.2*sin(2*pi*4*[0:0.01:20]);
+  x=0.1*sin(2*pi*0.5*[0:0.01:20])+0.2*sin(2*pi*1*[0:0.01:20]);
   r=randi([1 length(x)],20,1);
   mu=2*std(x);
 
@@ -27,3 +27,4 @@ Repository of personal function developed in matlab
   hold off
   grid on
   ```
+  [!alt text](MatlabFunctions/figures/spikeDemo.svg)

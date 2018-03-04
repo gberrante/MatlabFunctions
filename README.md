@@ -28,3 +28,16 @@ Repository of personal function developed in matlab
   grid on
   ```
   ![alt text](https://github.com/gberrante/MatlabFunctions/blob/master/figures/spikeDemo.svg)
+
+
+- ### Iterative Gauss-Seidel linear system solver
+  available for download also on [Matlab File Exchange](https://it.mathworks.com/matlabcentral/fileexchange/48302-gauss-seidel-iterative-linear-system-solver) 
+  
+  This function solves linear system with gauss seidel method. Consider the linear system model: 
+  A*x=b , the function sintax is: 
+  [x,execution_time]=itergauss(A,b,n) 
+  [x] is the solution vector 
+  A is the linear matrix of the problem 
+  b is the known term vector 
+  n is the number of iterative approximation 
+  execution_time is the time needed to solve the system

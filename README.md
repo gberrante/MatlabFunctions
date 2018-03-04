@@ -27,4 +27,4 @@ Repository of personal function developed in matlab
   hold off
   grid on
   ```
-  ![alt text](https://raw.githubusercontent.com/gberrante/MatlabFunctions/master/figures/spikeDemo.svg)
+  ![alt text](https://github.com/gberrante/MatlabFunctions/blob/master/figures/spikeDemo.svg)

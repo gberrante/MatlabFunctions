@@ -3,7 +3,8 @@ Repository of personal function developed in matlab
 
 - ### Spike Removal function
   available for download also on [Matlab File Exchange](https://it.mathworks.com/matlabcentral/fileexchange/66316-spikeremoval-x-mu-) 
-  this function removes spikes that go over the threshold value mu
+  
+  This function removes spikes that go over the threshold value mu
   each array element that is over mu is averaged between previous and subsequent element
   if spikes occur in the first or last element of the array, it filters it using the nearest value
   

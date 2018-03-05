@@ -65,7 +65,8 @@ Repository of personal function developed in matlab
   ```
   ![alt text](https://github.com/gberrante/MatlabFunctions/blob/master/figures/adaptiveDS1.svg)
   
-  The start arrays has both 4642 element, the final ones only 2895. A compression rate of 37,65%
+  The start arrays has both 4642 element, the final ones only 2895. A **compression rate of 37,65%**
+  
   Like all the compression algorithm the threshold value that set the "loss of precision" causes small error in some part of the signal where there is a small derivative.
   
   ![alt text](https://github.com/gberrante/MatlabFunctions/blob/master/figures/adaptiveDSzoom.svg)

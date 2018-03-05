@@ -41,3 +41,33 @@ Repository of personal function developed in matlab
   b is the known term vector 
   n is the number of iterative approximation 
   execution_time is the time needed to solve the system
+
+- ### Adaptive downsampling of arrays
+  available for download also on [Matlab File Exchange](https://it.mathworks.com/matlabcentral/fileexchange/66349-adaptivedownsampling-x-y-threshold-) 
+  
+  This function uses the derivative and the standard deviation to remove, less significant samples fron long arrays (those that do not add much information like constant segment, that can be reconstructed with a simple linear interpolation), reducing size and memory allocation. 
+  
+   Example:
+  ``` matlab
+  clear all
+  clc
+
+  y=0.5*sin(0.5*pi*[0:0.01:10*pi])+0.5;
+  y=[y,zeros(1,500),ones(1,500),zeros(1,500)];
+  x=0:length(y)-1;
+
+  [x_final,y_final] = adaptiveDownsampling(x,y,0.001);
+
+  plot(x,y);
+  hold on
+  plot(x_final,y_final);
+  grid on
+  ```
+  ![alt text](https://github.com/gberrante/MatlabFunctions/blob/master/figures/adaptiveDS1.svg)
+  
+  The start arrays has both 4642 element, the final ones only 2895. A compression rate of 37,65%
+  Like all the compression algorithm the threshold value that set the "loss of precision" causes small error in some part of the signal where there is a small derivative.
+  
+  ![alt text](https://github.com/gberrante/MatlabFunctions/blob/master/figures/adaptiveDSzoom.svg)
+  
+  
